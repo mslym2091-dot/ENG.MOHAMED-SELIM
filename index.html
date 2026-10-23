@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ENG Mohamed Selim | Physics</title>
+
+  <!-- ملف التصميم -->
+  <link rel="stylesheet" href="CSS.css">
+
+  <!-- خط الموقع -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- خلفية العالم ثلاثي الأبعاد -->
+  <div id="three-background"></div>
+  <div class="background-overlay"></div>
+
+  <!-- شريط التنقل -->
+  <header class="navbar">
+    <a href="#" class="logo">⚛ ENG MOHAMED SELIM</a>
+
+    <nav>
+      <a href="#home">الرئيسية</a>
+      <a href="#lectures">المحاضرات</a>
+      <a href="#about">من أنا</a>
+      <a href="#contact">تواصل معي</a>
+    </nav>
+  </header>
+
+  <!-- الواجهة الرئيسية -->
+  <main>
+
+    <section class="hero" id="home">
+
+      <div class="hero-content">
+        <span class="eyebrow">PHYSICS • PROGRAMMING • FUTURE</span>
+
+        <h1>
+          الفيزياء عالم من
+          <span class="gradient-text">الاكتشافات</span>
+        </h1>
+
+        <h2>ENG Mohamed Selim</h2>
+
+        <p>
+          رحلتك لفهم الفيزياء تبدأ من هنا.
+          محاضرات منظمة، شرح واضح، وعالم من المعرفة.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#lectures" class="btn primary">اكتشف المحاضرات ↗</a>
+          <a href="#about" class="btn secondary">اعرف عني</a>
+        </div>
+      </div>
+
+      <!-- صورتك: ضع صورتك في نفس المجلد باسم mohamed.jpg -->
+      <div class="profile-container">
+        <div class="profile-glow"></div>
+        <img
+          src="WhatsApp Image 2026-10-23 at 7.08.00 PM.jpeg"
+          alt="ENG Mohamed Selim"
+          class="profile-image"
+        >
+        <div class="profile-caption">
+          <span class="online-dot"></span>
+          Physics & Programming
+        </div>
+      </div>
+
+    </section>
+
+    <!-- المحاضرات -->
+    <section class="lectures-section" id="lectures">
+
+      <div class="section-heading">
+        <span class="eyebrow">YOUR LEARNING JOURNEY</span>
+        <h2>محاضرات <span class="gradient-text">فيزياء الدبلوم</span></h2>
+        <p>اختار محاضرتك وابدأ رحلة التعلم.</p>
+      </div>
+
+      <!-- البحث -->
+      <div class="lecture-search">
+        <input
+          type="search"
+          id="searchLecture"
+          placeholder="ابحث عن محاضرة..."
+          aria-label="ابحث عن محاضرة"
+        >
+      </div>
+
+      <!-- هنا تظهر المحاضرات -->
+      <div id="lecture-list" class="lecture-grid">
+        <div class="empty-state">
+          <span>⚛️</span>
+          <h3>رحلتك العلمية تبدأ هنا</h3>
+          <p>سيتم عرض المحاضرات التي تتم إضافتها في هذا القسم.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- لوحة إضافة المحاضرات -->
+    <section class="admin-section" id="admin">
+
+      <div class="section-heading">
+        <span class="eyebrow">LECTURE MANAGEMENT</span>
+        <h2>إدارة <span class="gradient-text">المحاضرات</span></h2>
+        <p>أضف عنوان المحاضرة ورابط الفيديو الخاص بها.</p>
+      </div>
+
+      <form id="lectureForm" class="admin-form">
+
+        <label for="lectureTitle">اسم المحاضرة</label>
+        <input
+          type="text"
+          id="lectureTitle"
+          placeholder="مثال: المحاضرة الأولى - الحركة"
+          required
+        >
+
+        <label for="lectureChapter">الباب أو القسم</label>
+        <input
+          type="text"
+          id="lectureChapter"
+          placeholder="مثال: الباب الأول"
+          required
+        >
+
+        <label for="youtubeLink">رابط فيديو يوتيوب</label>
+        <input
+          type="url"
+          id="youtubeLink"
+          placeholder="https://www.youtube.com/watch?v=..."
+          required
+        >
+
+        <button type="submit" class="btn primary">
+          ＋ إضافة المحاضرة
+        </button>
+
+        <p id="formMessage" role="status"></p>
+
+      </form>
+
+      <p class="admin-note">
+        ملاحظة: لوحة الإضافة في هذه النسخة تجريبية؛ سنضيف تسجيل دخول آمنًا
+        للأونر قبل نشر المنصة للطلبة.
+      </p>
+
+    </section>
+
+    <!-- من أنا -->
+    <section class="about-section" id="about">
+      <div class="about-card">
+        <span class="eyebrow">ABOUT ME</span>
+        <h2>من أنا؟ | About Me</h2>
+
+        <p>
+          أنا ENG Mohamed Selim، مهتم بتدريس الفيزياء والبرمجة،
+          وهدفي تقديم تجربة تعليمية منظمة تساعد الطلاب على الفهم والتطور.
+        </p>
+
+        <p dir="ltr">
+          I am ENG Mohamed Selim, a Physics and Programming educator
+          passionate about making learning clear, engaging, and accessible.
+        </p>
+      </div>
+    </section>
+
+    <!-- التواصل -->
+    <section class="contact-section" id="contact">
+      <h2>خلينا على تواصل</h2>
+      <p>للاستفسارات والتواصل:</p>
+
+      <a class="btn primary"
+         href="https://wa.me/201555934947"
+         target="_blank"
+         rel="noopener noreferrer">
+        تواصل معي عبر واتساب
+      </a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 ENG Mohamed Selim — جميع الحقوق محفوظة</p>
+    <p>Built for learning. Inspired by the universe. ⚛️</p>
+  </footer>
+
+  <!-- ملف الحركة والتفاعل ومكتبة Three.js -->
+  <script type="module" src="JS.js"></script>
+
+</body>
+</html>
